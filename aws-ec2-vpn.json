@@ -329,6 +329,9 @@
                 "/etc/init.d/xl2tpd restart",
                 "update-rc.d ipsec defaults",
                 "update-rc.d xl2tpd defaults",
+                
+                "mv /etc/hosts /etc/hosts.old",
+                "curl -o /etc/hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
 
                 "echo { \\\"Status\\\": \\\"SUCCESS\\\",
                         \\\"Reason\\\": \\\"complete\\\",
