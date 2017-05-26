@@ -32,7 +32,7 @@
       "VPN": {
         "ConnectDelay": "5000",
         "Idle" : "1800",
-        "PrimaryDnsServer" : "8.8.8.8",
+        "PrimaryDnsServer" : "127.0.0.1",
         "SecondaryDnsServer" : "8.8.4.4"
       }
     },
@@ -332,6 +332,7 @@
                 
                 "mv /etc/hosts /etc/hosts.old",
                 "curl -o /etc/hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+                "/etc/init.d/dnsmasq restart",
 
                 "echo { \\\"Status\\\": \\\"SUCCESS\\\",
                         \\\"Reason\\\": \\\"complete\\\",
