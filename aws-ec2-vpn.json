@@ -206,7 +206,7 @@
         "DesiredCapacity": "1",
         "MinSize": "0",
         "MaxSize": "1",
-        "Tags": [ { "Key": "Name", "Value": "VPNInstance", "PropagateAtLaunch": true } ]
+        "Tags": [ { "Key": "Name", "Value": "OpenSwanVPN", "PropagateAtLaunch": true } ]
       }
     },
     "VpnInstanceLaunchConfig": {
